@@ -11,7 +11,7 @@ import './App.css';
       <ChatEngine
         height="100vh"
         projectID="500111a7-44f0-4937-81df-c960a767dca7"
-        userName="javascriptmastery"
+        userName="etsukokasahara"
         userSecret="123123"
         renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
       />
