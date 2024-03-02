@@ -4,8 +4,6 @@ import './App.css';
 
 
  const App = () => {
-    if (!localStorage.getItem('username')) return <LoginForm />;
-  
     return (
       <ChatEngine
         height="100vh"
@@ -18,3 +16,5 @@ import './App.css';
 
 
  export default App;
+
+ //saveするための足掻き
