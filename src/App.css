@@ -55,14 +55,15 @@
 
   
   
-/*  右　オプション　deleteボタン*/
+/*  右　オプション　deleteボタン  中の文字の色を変えたい*/
   .ce-danger-button {
     background-color: #3DA2B0 !important;
     border-radius: 22px !important;
   }
   
+
   .ce-settings {
-    background-color: rgb(240, 240, 240) !important;
+    background-color: black !important;
   }
   
   .ce-autocomplete-input {
