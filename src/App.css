@@ -52,12 +52,12 @@
     position: relative;
     bottom: 1px;
   }
-/*  #7554a0*/
-  
-  
 
+  
+  
+/*  右　オプション　deleteボタン*/
   .ce-danger-button {
-    background-color: black !important;
+    background-color: #3DA2B0 !important;
     border-radius: 22px !important;
   }
   
