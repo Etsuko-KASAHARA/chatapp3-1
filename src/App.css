@@ -13,7 +13,7 @@
 
   /* This is a single-line comment   rgb(240, 240, 240)   */
 
-  /* ↓Okey 選択されていないグループ  */
+  /* ↓Okey 選択されていないグループ //枠線つけたいけどつけられない  */
   .ce-chats-container {
     background-color: #3DA2B0 !important;
     border: 1px solid white !important;
@@ -39,11 +39,12 @@
   }
   
 
+/* 新しいチャット作る時の箱  */
   .ce-text-input {
     border-radius: 6px !important;
-    border: 1px solid #3b2a50 !important;
+    border: 1px solid  #31838f !important;
   }
-  
+
   /*  チャットを作るボタン*/
   .ce-primary-button {
     border-radius: 6px !important;
@@ -54,8 +55,9 @@
 /*  #7554a0*/
   
   
+
   .ce-danger-button {
-    background-color: white !important;
+    background-color: black !important;
     border-radius: 22px !important;
   }
   
