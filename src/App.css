@@ -13,13 +13,13 @@
 
   /* This is a single-line comment   rgb(240, 240, 240)   */
 
-  /* ↓Okey   */
+  /* ↓Okey 選択されていないグループ  */
   .ce-chats-container {
     background-color: #3DA2B0 !important;
   }
   
 
-/* ↓Okey   */
+/* ↓Okey  選択されているグループ */
   .ce-active-chat-card {
     background-color: #31838f !important;
     border: 5px solid #31838f !important;
@@ -27,7 +27,7 @@
   }
   
 
-  /* ↓Okey   */
+  /* ↓Okey  チャットボックス下のメッセージ */
   .ce-chat-subtitle-text {
     color: #2b2b2b !important;
   }/* #424242 #2b2b2b */
@@ -42,9 +42,10 @@
     border: 1px solid #3b2a50 !important;
   }
   
+  /*  チャットを作るボタン*/
   .ce-primary-button {
     border-radius: 6px !important;
-    background-color: #86e2f0 !important;
+    background-color: #31838f !important;
     position: relative;
     bottom: 1px;
   }
