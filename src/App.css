@@ -65,6 +65,7 @@
 /*  右設定らん #3DA2B0*/
   .ce-settings {
     background-color: #3DA2B0 !important;
+    color:black;
   }
   
   
@@ -169,7 +170,6 @@
   .read-receipts {
     position: relative;
     bottom: 6px;
-    background-color: black;
   }
   
   .read-receipt {
