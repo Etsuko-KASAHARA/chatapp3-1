@@ -127,7 +127,6 @@
     width: 100%;
     display: flex;
     margin-left: 18px;
-    background-color: black;/*  足してみた*/
   }
   
   .message-block {
@@ -170,6 +169,7 @@
   .read-receipts {
     position: relative;
     bottom: 6px;
+    background-color: black;
   }
   
   .read-receipt {
