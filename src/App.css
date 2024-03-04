@@ -16,6 +16,8 @@
   /* ↓Okey 選択されていないグループ  */
   .ce-chats-container {
     background-color: #3DA2B0 !important;
+    border: 1px solid white !important;
+    border-radius: 0px !important;
   }
   
 
