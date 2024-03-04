@@ -61,10 +61,11 @@
     border-radius: 22px !important;
   }
   
-
+/*  左設定らん*/
   .ce-settings {
-    background-color: black !important;
+    background-color: #3DA2B0 !important;
   }
+  
   
   .ce-autocomplete-input {
     border-radius: 6px !important;
