@@ -22,8 +22,7 @@
 
   .ce-active-chat-card {
     background-color: #cabcdc !important;
-    border: 10px solid black !important;/* いじってみる   */
-
+    border: 5px solid black !important;/* いじってみる   */
     border-radius: 0px !important;
   }
   
