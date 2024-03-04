@@ -27,7 +27,7 @@
   }
   
 
-  
+  /* ↓Okey   */
   .ce-chat-subtitle-text {
     color: #2b2b2b !important;
   }/* #424242 #2b2b2b */
@@ -36,6 +36,7 @@
     padding-bottom: 20px !important;
   }
   
+
   .ce-text-input {
     border-radius: 6px !important;
     border: 1px solid #3b2a50 !important;
@@ -43,10 +44,12 @@
   
   .ce-primary-button {
     border-radius: 6px !important;
-    background-color: #7554a0 !important;
+    background-color: #86e2f0 !important;
     position: relative;
     bottom: 1px;
   }
+/*  #7554a0*/
+  
   
   .ce-danger-button {
     background-color: white !important;
