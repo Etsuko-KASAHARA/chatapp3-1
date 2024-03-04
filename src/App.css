@@ -184,13 +184,13 @@
     bottom: 0px;
     width: calc(100% - 36px);
     padding: 18px;
-    background-color: black;
+    background-color: white;
   }
   
   .message-form {
     overflow: hidden;
     border-radius: 6px;
-    border: 1px solid #3b2a50;
+    border: 1px solid #01515c;
     background-color: white;
   }
   
