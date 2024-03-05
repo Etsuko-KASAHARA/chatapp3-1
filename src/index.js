@@ -13,9 +13,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //firebaseのデータをとってくる
 
 // Firebase Authenticationのリスナー
-const chatEngine = ChatEngineCore.create({
-    apiKey: '500111a7-44f0-4937-81df-c960a767dca7' // ChatEngine.ioのプロジェクトID
-  });
+//const chatEngine = ChatEngineCore.create({
+ //   apiKey: '500111a7-44f0-4937-81df-c960a767dca7' // ChatEngine.ioのプロジェクトID
+ // });
 
 
 
