@@ -1,13 +1,10 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 
-//import App from './App';
+import App from './App';
 
 
-import { createRoot } from 'react-dom/client';
-const container = document.getElementById('app');
-const root = createRoot(container);
-root.render(<App />);
+
 
 
 
@@ -32,20 +29,18 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 firebase.auth().onAuthStateChanged(profiles => {
     if (profiles) {
-      const { fullName, organization, email, profilePicture } = profiles;
+      const { fullName, organization, profilePicture } = profiles;
   
       // ChatEngine.ioのユーザー情報を作成
       const chatEngineUser = {
         username: fullName,
         secret: organization, // ChatEngine.ioではユーザーの一意の識別子としてFirebaseのUIDを使用
-        email: email,
         avatar: profilePicture // プロフィール画像のURLを使用
       };
 
 
 
       const chatEngine = ChatEngineCore.create({
-        projectID: '500111a7-44f0-4937-81df-c960a767dca7', // ChatEngine.ioのプロジェクトIDを指定
         privateKey: '88256243-6899-497d-b68d-040d0629e3aa' // ChatEngine.ioのAPIキーを指定
       });
 
