@@ -20,16 +20,16 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
-firebase.auth().onAuthStateChanged(user => {
-    if (user) {
-      const { uid, displayName, email, photoURL } = user;
+firebase.auth().onAuthStateChanged(profiles => {
+    if (profiles) {
+      const { fullName, organization, email, profilePicture } = profiles;
   
       // ChatEngine.ioのユーザー情報を作成
       const chatEngineUser = {
-        username: displayName,
-        secret: uid, // ChatEngine.ioではユーザーの一意の識別子としてFirebaseのUIDを使用
+        username: fullName,
+        secret: organization, // ChatEngine.ioではユーザーの一意の識別子としてFirebaseのUIDを使用
         email: email,
-        avatar: photoURL // プロフィール画像のURLを使用
+        avatar: profilePicture // プロフィール画像のURLを使用
       };
 
 
