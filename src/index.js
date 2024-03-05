@@ -3,12 +3,19 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
+//下三つfirebaseと繋げるため
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 //firebaseのデータをとってくる
 
 const firebase = require('firebase');
 const chatEngine = require('chatengine');
+
+
 
 // Firebaseの初期化
 
