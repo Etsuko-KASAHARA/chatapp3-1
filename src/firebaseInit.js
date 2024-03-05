@@ -3,6 +3,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
+import ChatEngineCore from 'chatengine';
 
 firebase.initializeApp({
     apiKey: "AIzaSyA8l73l4YIAkRGZm8gLgig7B3Cz6-vznyU",

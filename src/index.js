@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-import firebase from './firebaseInit'; // Firebaseの初期化ファイルをインポート
+import firebase from './firebaseInit';// Firebaseの初期化ファイルをインポート
+import ChatEngineCore from 'chatengine';  
 // この下にコードを追加していく
 
 
@@ -12,6 +13,13 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //firebaseのデータをとってくる
 
 // Firebase Authenticationのリスナー
+const chatEngine = ChatEngineCore.create({
+    apiKey: '500111a7-44f0-4937-81df-c960a767dca7' // ChatEngine.ioのプロジェクトID
+  });
+
+
+
+
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
       const { uid, displayName, email, photoURL } = user;
