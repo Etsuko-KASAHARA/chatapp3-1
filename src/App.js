@@ -7,7 +7,7 @@ import './App.css';
 
 //ここからした２つfirebase
 import React, { useEffect } from 'react';
-import firebase from './firebaseInit'
+
 
 
 const projectID = '500111a7-44f0-4937-81df-c960a767dca7';
