@@ -11,6 +11,7 @@ const firebase = require('firebase');
 const chatEngine = require('chatengine');
 
 // Firebaseの初期化
+
 firebase.initializeApp({
   apiKey: "AIzaSyA8l73l4YIAkRGZm8gLgig7B3Cz6-vznyU",
   authDomain: "cobloom-58ea3.firebaseapp.com",

@@ -8,6 +8,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
+    "chatengine": "^0.0.4",
+    "firebase": "^10.8.1",
     "react": "^18.2.0",
     "react-chat-engine": "^1.11.28",
     "react-dom": "^18.2.0",
