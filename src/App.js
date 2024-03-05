@@ -5,12 +5,7 @@ import LoginForm from './components/LoginForm';
 import './App.css';
 
 
-//ここからした２つfirebase
-import React, { useEffect } from 'react';
 
-
-
-const projectID = '500111a7-44f0-4937-81df-c960a767dca7';
 
 const App = () => {
   if (!localStorage.getItem('username')) return <LoginForm />;
@@ -32,41 +27,7 @@ const App = () => {
 
 
 // App.js
-//ここからしたfirebase
-const firebase = require('firebase');
-const chatEngine = require('chatengine');
 
-
-function App1() {
-  useEffect(() => {
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        // ユーザーがサインアップした場合の処理
-        const { displayName, email } = user;
-
-        // ChatEngine.ioのユーザー情報を作成
-        const chatEngineUser = {
-          username: displayName,
-          secret: email, // ここではemailを秘密鍵として使用していますが、適切な秘密鍵を選択してください
-          email: email
-        };
-
-        // ChatEngine.ioのデータベースにユーザー情報を保存
-        chatEngine.createUser(chatEngineUser).then(() => {
-          console.log('User data saved to ChatEngine.io database.');
-        }).catch(error => {
-          console.error('Error saving user data to ChatEngine.io:', error);
-        });
-      }
-    });
-  }, []);
-
-  return (
-    <div>
-      {/* ここにアプリケーションのコンポーネントを配置する */}
-    </div>
-  );
-}
 
 
 
