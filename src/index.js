@@ -17,7 +17,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 //firebaseのデータをとってくる
 
 
-const chatEngine = require('chatengine');
+//消しとくねfornow /const chatEngine = require('chatengine');
 
 
 
