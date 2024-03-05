@@ -32,9 +32,11 @@ const App = () => {
 
 
 // App.js
-
-
 //ここからしたfirebase
+const firebase = require('firebase');
+const chatEngine = require('chatengine');
+
+
 function App1() {
   useEffect(() => {
     firebase.auth().onAuthStateChanged(user => {
