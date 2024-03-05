@@ -12,7 +12,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 //firebaseのデータをとってくる
 
-const firebase = require('firebase');
+
 const chatEngine = require('chatengine');
 
 
