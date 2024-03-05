@@ -4,6 +4,9 @@ import ChatFeed from './components/ChatFeed';
 import LoginForm from './components/LoginForm';
 import './App.css';
 
+//した二つfirebase関連
+import React, { useEffect } from 'react';
+import firebase from './firebaseInit'; // firebaseInit.jsのファイルパスを正しく指定してください
 
 
 
@@ -13,7 +16,7 @@ const App = () => {
   return (
     <ChatEngine
       height="100vh"
-      projectID={projectID}
+      projectID={'500111a7-44f0-4937-81df-c960a767dca7'}
       userName={localStorage.getItem('username')}
       userSecret={localStorage.getItem('password')}
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
