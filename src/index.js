@@ -31,6 +31,15 @@ firebase.auth().onAuthStateChanged(user => {
         email: email,
         avatar: photoURL // プロフィール画像のURLを使用
       };
+
+
+
+      const chatEngine = ChatEngineCore.create({
+        projectID: '500111a7-44f0-4937-81df-c960a767dca7', // ChatEngine.ioのプロジェクトIDを指定
+        privateKey: '88256243-6899-497d-b68d-040d0629e3aa' // ChatEngine.ioのAPIキーを指定
+      });
+
+      chatEngine.connect('uniqueID', chatEngineUser);
   
       // ChatEngine.ioのデータベースにユーザー情報を保存
       chatEngine.createUser(chatEngineUser).then(() => {
