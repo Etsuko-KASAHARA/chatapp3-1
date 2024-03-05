@@ -1,7 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 
-import App from './App';
+//import App from './App';
+
+
+import { createRoot } from 'react-dom/client';
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);
+
+
+
+
 
 import firebase from './firebaseInit';// Firebaseの初期化ファイルをインポート
 import ChatEngineCore from 'chatengine';  
