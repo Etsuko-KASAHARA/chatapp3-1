@@ -236,7 +236,7 @@
   }
   
   /* FORM STYLES */
-  *,
+  /* *,
   *::after,
   *::before {
     margin: 0;
@@ -318,4 +318,4 @@
   .button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+  } */
