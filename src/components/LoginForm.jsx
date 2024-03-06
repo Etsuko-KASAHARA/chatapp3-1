@@ -17,7 +17,7 @@ const Modal = () => {
       await axios.get('https://api.chatengine.io/chats', { headers: authObject });
 
       localStorage.setItem('username', username); //do not have to login every time
-      localStorage.setItem('organization', password);
+      localStorage.setItem('password', password);
 
       window.location.reload(); //reload page
       setError('');
@@ -32,7 +32,7 @@ const Modal = () => {
         <h1 className="title">CO BLOOM-CHAT</h1>
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Organization" required />
           <div align="center">
             <button type="submit" className="button">
               <span>Start chatting</span>
