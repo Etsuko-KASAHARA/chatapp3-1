@@ -17,7 +17,7 @@ const Modal = () => {
       await axios.get('https://api.chatengine.io/chats', { headers: authObject });
 
       localStorage.setItem('username', username); //do not have to login every time
-      localStorage.setItem('password', password);
+      localStorage.setItem('organization', password);
 
       window.location.reload(); //reload page
       setError('');
